@@ -69,24 +69,30 @@ td {
 h1 {
 	font:{
 		family: $heading-font !important;
-		size: 4em;
+		size: 60px;
 		weight: 900;
 	}
 	text-transform: uppercase;
-	line-height: 1em;
+	line-height: 70px;
 	color: $bnm_orange;
 }
 
 h2 {
+	font:{
+		family: $heading-font !important;
+		size: 24px;
+		weight: 700;
+	}
+	line-height:24px;
 	color: #F47A28;
 }
 
 p {
 	font:{
 		family: $body-font;
-		size: 1em;
+		size: 15px;
 		}
-	line-height: 1.4em;
+	line-height: 21px;
 }
 
 
@@ -114,19 +120,19 @@ p {
 		weight: 900;
 	}
 	text-transform: uppercase;
-	line-height: 84px;
+	line-height: 60px;
 	color: $bnm_orange;
 	background-color: #FFF;
 }
 
 
 .supporting{
-			font: {
+	font: {
 		family: $body-font;
 		size: 20px;
 		weight: 600;
 	}
-	line-height: 21px;
+	// line-height: 2px;
 	color: #fff;
 	// background-color: #FFF;
 }
