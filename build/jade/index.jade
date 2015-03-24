@@ -15,20 +15,29 @@ html(lang='en')
 		style
 			@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900");
 
-		table(width="100%", height="100%", border="0", cellpadding="0", cellspacing="0", bgcolor="#F47A28").wrapper
+		table(width="100%", height="100%", border="0", cellpadding="0", cellspacing="0", bgcolor="#F47A28",  background="http://prkr88.github.io/BNM_trade_eDM/assets/Evolution-of-human-work-silhouettes.png").wrapper
 			tr
 				td(height="40").spacer
+					p(style={'text-align':'center', 'color':'#fff'}) view in browser
 			tr
 				td
 					table(width="600", border="0", cellpadding="0", cellspacing="0", align="center").content
 						tr
 							td
 								include header.jade
-			table
-				tr
-					td
-						table(border="0", cellpadding="0", cellspacing="0", align="center").content
-							tr
-								td
-									//- p.
-										The ways brands communicate, is changing fast, and with <strong>90% of todays consumers watching online video</strong>, creating compelling video content, is simply not enough. Here at Brand New Media, we have the ability combine the art of video content creation, with the science of response; Providing end-to-end content marketing solutions from insight led creative ideation and production, through to data-centric amplification and distribution.
+
+		table(width="100%", height="100%", border="0", cellpadding="0", cellspacing="0")
+			tr
+				td
+					table(width="600", border="0", cellpadding="0", cellspacing="0", align="center")
+						tr
+							td
+								include intro.jade
+						tr
+							td(height="40").spacer
+			tr
+				td
+					table(width="600", border="0", cellpadding="0", cellspacing="0", align="center")
+						tr
+							td
+								include footer.jade

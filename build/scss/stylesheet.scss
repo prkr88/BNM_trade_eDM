@@ -2,7 +2,7 @@
 
 $primary-font: Arial, Verdana, Trebuchet MS, sans-serif;
 $body-font: Source Sans Pro, Arial, Verdana, sans-serif;
-$heading-font: Source Sans Pro, Arial Black, sans-serif;
+$heading-font: Source Sans Pro, Helvetica, Arial Black, sans-serif;
 // $secondary-font: Din Alternant;
 
 //BNM colors
@@ -77,6 +77,10 @@ h1 {
 	color: $bnm_orange;
 }
 
+h2 {
+	color: #F47A28;
+}
+
 p {
 	font:{
 		family: $body-font;
@@ -97,8 +101,8 @@ p {
 .content {
 	border:{
 		top: 2px solid #fff;
-		left: 2px solid #fff;
-		right: 2px solid #fff;
+		// left: 2px solid #fff;
+		// right: 2px solid #fff;
 	}
 	// padding: 20px;
 }
@@ -106,17 +110,26 @@ p {
 .heading {
 		font: {
 		family: $heading-font;
-		size: 4em;
+		size: 60px;
 		weight: 900;
 	}
 	text-transform: uppercase;
-	line-height: 1.4em;
+	line-height: 84px;
 	color: $bnm_orange;
 	background-color: #FFF;
 }
 
 
-
+.supporting{
+			font: {
+		family: $body-font;
+		size: 20px;
+		weight: 600;
+	}
+	line-height: 21px;
+	color: #fff;
+	// background-color: #FFF;
+}
 
 
 

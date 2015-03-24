@@ -12,11 +12,12 @@ var options = {
 	user: 'api:key-a51cf11f46a793c555e2447cdd681e8f',
 	url: 'https://api.mailgun.net/v3/sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org/messages',
 	form: {
-		from: 'Gulp Automator <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
-		replyto: 'Michael Parker <mparker@brandnewmedia.com.au>',
+		// from: 'Gulp Automator <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
+		from: 'Michael Parker <p88@me.com>',
 		to: [
-		'Michael Parker <redharvestredharvest@gmail.com>',
-		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
+		// 'Michael Parker <redharvestredharvest@gmail.com>',
+		'Michael Parker <mparker@brandnewmedia.com.au>'
+		// 'Tom Garton <tgarton@brandnewmedia.com.au>'
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		// 'Dawn Jeremiah <DJeremiah@brandnewmedia.asia>',
 		// 'Claudia Holmes <cholmes@brandnewmedia.com.au>',
@@ -24,7 +25,7 @@ var options = {
 		// 'Emill Marlinda <EMarlinda@brandnewmedia.asia>'
 		],
 		cc:[
-			'Michael Parker <mparker@brandnewmedia.com.au>',
+			
 			// 'Tom Garton <TGarton@brandnewmedia.com.au>',
 			// 'Natalie Johnson <NJohnson@brandnewmedia.com.au>',
 			// 'Magdalena Trajkoska <mtrajkoska@brandnewmedia.com.au>'

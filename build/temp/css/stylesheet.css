@@ -39,12 +39,15 @@ td {
   margin: auto; }
 
 h1 {
-  font-family: Source Sans Pro, Arial Black, sans-serif !important;
+  font-family: Source Sans Pro, Helvetica, Arial Black, sans-serif !important;
   font-size: 4em;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1em;
   color: #f47a28; }
+
+h2 {
+  color: #F47A28; }
 
 p {
   font-family: Source Sans Pro, Arial, Verdana, sans-serif;
@@ -55,15 +58,20 @@ p {
   background: none; }
 
 .content {
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff; }
+  border-top: 2px solid #fff; }
 
 .heading {
-  font-family: Source Sans Pro, Arial Black, sans-serif;
-  font-size: 4em;
+  font-family: Source Sans Pro, Helvetica, Arial Black, sans-serif;
+  font-size: 60px;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 1.4em;
+  line-height: 84px;
   color: #f47a28;
   background-color: #FFF; }
+
+.supporting {
+  font-family: Source Sans Pro, Arial, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #fff; }
