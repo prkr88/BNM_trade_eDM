@@ -1,0 +1,129 @@
+//Use SASS styles
+
+$primary-font: Arial, Verdana, Trebuchet MS, sans-serif;
+$body-font: Source Sans Pro, Arial, Verdana, sans-serif;
+$heading-font: Source Sans Pro, Arial Black, sans-serif;
+// $secondary-font: Din Alternant;
+
+//BNM colors
+$bnm_orange: rgb(244, 122, 40);
+$bnm_grey: rgb(124, 134, 142);
+$bnm_green: rgb(67, 176, 42);
+$bnm_yellow: rgb(255, 205, 0);
+$bnm_red: rgb(203, 44, 48);
+$bnm_blue: rgb(0, 136, 185);
+$black_60: rgba(0,0,0,0.6);
+
+$default_link: #4D7EA8;
+
+body {
+	font-family: $primary-font !important;
+	min-width: 100% !important;
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	background-color: #f2f2f2;
+	font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, p, a {
+	margin: 0;
+}
+
+.linkContainer {
+	color: $bnm_blue !important;
+	text-decoration: none !important;
+	& a {
+		color: $bnm_blue !important;
+		text-decoration: none !important;
+	}
+}
+
+table > * {
+	border-collapse: collapse;
+}
+
+table, tr, td, th, img {
+	border: none;
+}
+
+td {
+	padding: 0;
+	margin: 0;
+}
+
+.placeholder {
+	background-color: yellow;
+	color: #000;
+}
+
+.flag {
+	background-color: #fff;
+	padding: 20px;
+	max-width: 650px;
+	width: 100%;
+	margin: auto;
+}
+
+// BNM heading styles
+h1 {
+	font:{
+		family: $heading-font !important;
+		size: 4em;
+		weight: 900;
+	}
+	text-transform: uppercase;
+	line-height: 1em;
+	color: $bnm_orange;
+}
+
+p {
+	font:{
+		family: $body-font;
+		size: 1em;
+		}
+	line-height: 1.4em;
+}
+
+
+.wrapper {
+
+}
+
+.spacer {
+	background: none;
+}
+
+.content {
+	border:{
+		top: 2px solid #fff;
+		left: 2px solid #fff;
+		right: 2px solid #fff;
+	}
+	// padding: 20px;
+}
+
+.heading {
+		font: {
+		family: $heading-font;
+		size: 4em;
+		weight: 900;
+	}
+	text-transform: uppercase;
+	line-height: 1.4em;
+	color: $bnm_orange;
+	background-color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
