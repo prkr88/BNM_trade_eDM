@@ -10,37 +10,12 @@ html(lang='en')
 		title Brand New Media
 	
 	body(bgcolor="#f2f2f2")
-		//- include flag.jade
 		
 		//- Injects into the preview text of the email
 		.meta
 			p(style="font-size:0px; line-height:0px") changing paradigms of video, branded content evolution and our ChannelPLAY product solution.
-		style
+
+		style.
 			@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900");
 
-		table(width="100%", border="0", cellpadding="0", cellspacing="0", bgcolor="#F47A28",  background="http://prkr88.github.io/BNM_trade_eDM/assets/Evolution-of-human-work-silhouettes.png").wrapper
-			tr
-				td(height="40").spacer
-					p(style={'text-align':'center'}) 
-						a(href="http://prkr88.github.io/BNM_trade_eDM/", style={'text-align':'center', 'color':'#fff'}) view in browser
-			tr
-				td
-					table(width="600", border="0", cellpadding="0", cellspacing="0", align="center").content
-						tr
-							td
-								include header.jade
-
-		table(width="100%", height="100%", border="0", cellpadding="0", cellspacing="0")
-			tr
-				td
-					include intro.jade
-						tr
-							td(height="40").spacer
-			tr
-				td
-					table(width="600", border="0", cellpadding="0", cellspacing="0", align="center")
-						tr
-							td
-								//- include footer.jade
-						tr
-							td(height="40").spacer
+		include main_view.jade
