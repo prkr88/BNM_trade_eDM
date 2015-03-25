@@ -5,42 +5,32 @@ html(lang='en')
 		meta(http-equiv="Content-Type", content="text/html")
 		meta(name="viewport", content="initial-scale=1")
 
-		//- styles from here will be moved inline
+		//- styles from here will be moved inline by gulp
 		link(type='text/css', rel='stylesheet', href='/css/stylesheet.css')
 		title Brand New Media
 	
-	body(bgcolor="#f2f2f2")
-		//- include flag.jade
-		
-		//- Injects into the preview text of the email
+	body
 		.meta
-			p(style="font-size:0px; line-height:0px") changing paradigms of video, branded content evolution and our ChannelPLAY product solution.
-		style
+			//- Sneaky way of injecting into the email preview text, but hiding it from view
+			p(style="font-size:0px; line-height:0px").
+				changing paradigms of video, branded content evolution and our channelPLAY product solution.
+
+		//- Add styles that aren't used inline such as @imports
+		style.
 			@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900");
 
-		table(width="100%", border="0", cellpadding="0", cellspacing="0", bgcolor="#F47A28",  background="http://prkr88.github.io/BNM_trade_eDM/assets/Evolution-of-human-work-silhouettes.png").wrapper
-			tr
-				td(height="40").spacer
-					p(style={'text-align':'center'}) 
-						a(href="http://prkr88.github.io/BNM_trade_eDM/", style={'text-align':'center', 'color':'#fff'}) view in browser
+		//- Wrapper table 	
+		table(width="100%")
 			tr
 				td
-					table(width="600", border="0", cellpadding="0", cellspacing="0", align="center").content
-						tr
-							td
-								include header.jade
-
-		table(width="100%", height="100%", border="0", cellpadding="0", cellspacing="0")
+					a(href="")
+						//- campaign monitor will auto add this link
+						browser view in browser
 			tr
 				td
-					include intro.jade
-						tr
-							td(height="40").spacer
+					//- the main content view is injected here
+					include main_view.jade
 			tr
 				td
-					table(width="600", border="0", cellpadding="0", cellspacing="0", align="center")
-						tr
-							td
-								//- include footer.jade
-						tr
-							td(height="40").spacer
+					//- anything to be injected after content here
+					include footer.jade
