@@ -13,10 +13,11 @@ var options = {
 	url: 'https://api.mailgun.net/v3/sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org/messages',
 	form: {
 		// from: 'Gulp Automator <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
-		from: 'Michael Parker <p88@me.com>',
+		from: 'Parker <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		to: [
 		// 'Michael Parker <redharvestredharvest@gmail.com>',
-		'Michael Parker <mparker@brandnewmedia.com.au>'
+		'Michael Parker <mparker@brandnewmedia.com>',
+		// 'web-0GQeiB <web-0GQeiB@mail-tester.com>'
 		// 'Tom Garton <tgarton@brandnewmedia.com.au>'
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		// 'Dawn Jeremiah <DJeremiah@brandnewmedia.asia>',

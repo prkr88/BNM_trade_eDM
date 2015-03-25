@@ -16,12 +16,15 @@ $black_60: rgba(0,0,0,0.6);
 
 $default_link: #4D7EA8;
 
+* {
+	-webkit-text-size-adjust: none;
+}
+
 body {
 	font-family: $primary-font !important;
 	min-width: 100% !important;
 	margin: 0;
 	padding: 0;
-	-webkit-text-size-adjust: none;
 	background-color: #f2f2f2;
 	font-size: 15px;
 }
@@ -33,9 +36,19 @@ h1, h2, h3, h4, h5, p, a {
 .linkContainer {
 	color: $bnm_blue !important;
 	text-decoration: none !important;
+	font:{
+		family: $body-font;
+		size: 15px;
+		}
+	line-height: 21px;
 	& a {
 		color: $bnm_blue !important;
 		text-decoration: none !important;
+		font:{
+			family: $body-font;
+			size: 15px;
+		}
+	line-height: 21px;
 	}
 }
 
@@ -87,6 +100,24 @@ h2 {
 	color: #F47A28;
 }
 
+h4 {
+	font:{
+		family: $body-font;
+		size: 16px;
+		}
+	line-height: 21px;
+}
+
+h5 {
+	font:{
+		family: $body-font;
+		size: 12px;
+		weight: 600;
+		}
+	line-height: 15px;
+	color: $bnm_grey;
+}
+
 p {
 	font:{
 		family: $body-font;
@@ -95,13 +126,22 @@ p {
 	line-height: 21px;
 }
 
+.caption {
+	display: block;
+	width: 150px;
+	text-align: center;
+}
 
 .wrapper {
-
+	background-image: url(http://prkr88.github.io/BNM_trade_eDM/assets/Evolution-of-human-work-silhouettes.png);
 }
 
 .spacer {
 	background: none;
+}
+
+.article {
+	background-color: #fff;
 }
 
 .content {
@@ -114,17 +154,18 @@ p {
 }
 
 .heading {
-		font: {
-		family: $heading-font;
-		size: 60px;
-		weight: 900;
-	}
-	text-transform: uppercase;
-	line-height: 60px;
 	color: $bnm_orange;
 	background-color: #FFF;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
+.inverseHeading{
+	color: #fff;
+	background-color: $bnm_orange;
+	padding-left: 3px;
+	padding-right: 3px;
+}
 
 .supporting{
 	font: {
@@ -132,7 +173,6 @@ p {
 		size: 20px;
 		weight: 600;
 	}
-	// line-height: 2px;
 	color: #fff;
 	// background-color: #FFF;
 }
