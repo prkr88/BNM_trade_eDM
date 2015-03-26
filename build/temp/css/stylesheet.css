@@ -15,7 +15,7 @@ table {
   border-collapse: collapse;
   border: none; }
 
-table, tr, td, th, img {
+tr, td, th, img {
   margin: 0; }
 
 .linkContainer {
@@ -47,8 +47,10 @@ h1 {
   font-size: 60px;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 70px;
-  color: #f47a28; }
+  line-height: 63px;
+  color: #f47a28;
+  margin: 0;
+  padding: 0; }
 
 h2 {
   font-family: Source Sans Pro, Helvetica, Arial Black, sans-serif !important;
@@ -84,9 +86,6 @@ p {
 
 .article {
   background-color: #fff; }
-
-.content {
-  border-top: 2px solid #fff; }
 
 .heading {
   color: #f47a28;

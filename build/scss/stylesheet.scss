@@ -41,7 +41,7 @@ table{
 }
 
 
-table, tr, td, th, img {
+tr, td, th, img {
 	margin: 0;
 }
 
@@ -85,8 +85,10 @@ h1 {
 		weight: 900;
 	}
 	text-transform: uppercase;
-	line-height: 70px;
+	line-height: 63px;
 	color: $bnm_orange;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
@@ -135,15 +137,11 @@ p {
 	background: none;
 }
 
-.article {
+
+.article {	
 	background-color: #fff;
 }
 
-.content {
-	border:{
-		top: 2px solid #fff;
-	}
-}
 
 .heading {
 	color: $bnm_orange;

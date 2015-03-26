@@ -12,8 +12,7 @@ html(lang='en')
 	body
 		.meta
 			//- Sneaky way of injecting into the email preview text, but hiding it from view
-			p(style="font-size:0px; line-height:0px").
-				changing paradigms of video, branded content evolution and our channelPLAY product solution.
+			p(style="font-size:0px; line-height:0px") changing paradigms of video, branded content evolution and our channelPLAY product solution.
 
 		//- Add styles that aren't used inline such as @imports
 		style.
@@ -22,7 +21,8 @@ html(lang='en')
 		//- Wrapper table 	
 		table(width="100%")
 			tr
-				td
+				//- respect the baseline, 2*21 is 42!
+				td(height="42px" style={'text-align': 'center'})
 					a(href="")
 						//- campaign monitor will auto add this link
 						browser view in browser
