@@ -1,4 +1,6 @@
-//Use SASS styles
+//Uses SASS styles
+
+//DON'T USE ANYTHING THAT ISN'T APPLIED INLINE, THEY'LL BE STRIPPED OUT BY GULP
 
 $primary-font: Arial, Verdana, Trebuchet MS, sans-serif;
 $body-font: Source Sans Pro, Arial, Verdana, sans-serif;
@@ -15,6 +17,8 @@ $black_60: rgba(0,0,0,0.6);
 
 $default_link: #4D7EA8;
 
+
+//Reset
 body {
 	
 	min-width: 100% !important;
@@ -28,6 +32,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, p, a {
+	margin: 0;
+}
+
+table{
+	border-collapse: collapse;
+	border: none;
+}
+
+
+tr, td, th, img {
 	margin: 0;
 }
 
@@ -48,11 +62,6 @@ h1, h2, h3, h4, h5, p, a {
 		}
 	line-height: 21px;
 	}
-}
-
-table, tr, td, th, img {
-	border-collapse: collapse;
-	border: none;
 }
 
 .placeholder {
@@ -76,8 +85,10 @@ h1 {
 		weight: 900;
 	}
 	text-transform: uppercase;
-	line-height: 70px;
+	line-height: 63px;
 	color: $bnm_orange;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
@@ -126,15 +137,11 @@ p {
 	background: none;
 }
 
-.article {
+
+.article {	
 	background-color: #fff;
 }
 
-.content {
-	border:{
-		top: 2px solid #fff;
-	}
-}
 
 .heading {
 	color: $bnm_orange;
