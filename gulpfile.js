@@ -95,7 +95,7 @@ gulp.task('compile', ['inline'], function(){
 
 //compile on change
 gulp.task('watch', function(){
-	gulp.watch(['./build/scss/*.scss', './build/jade/*.jade'], ['compile']);
+	gulp.watch(['./build/scss/*.scss', './build/jade/*'], ['compile']);
 });
 
 //serve to the browser
