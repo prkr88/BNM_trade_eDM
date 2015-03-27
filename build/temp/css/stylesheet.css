@@ -2,7 +2,7 @@ body {
   min-width: 100% !important;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #eee;
   font-size: 15px;
   line-height: 21px;
   font-family: Arial, Verdana, Trebuchet MS, sans-serif !important;
@@ -57,7 +57,7 @@ h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  color: #F47A28; }
+  color: #7c868e; }
 
 h4 {
   font-family: Source Sans Pro, Arial, Verdana, sans-serif;
@@ -104,3 +104,10 @@ p {
   font-size: 20px;
   font-weight: 600;
   color: #fff; }
+
+.cta {
+  color: #fff;
+  font-family: Source Sans Pro, Helvetica, Arial Black, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase; }

@@ -16,7 +16,7 @@ $bnm_blue: rgb(0, 136, 185);
 $black_60: rgba(0,0,0,0.6);
 
 $default_link: #4D7EA8;
-
+$pink: #E52054;
 
 //Reset
 body {
@@ -24,7 +24,7 @@ body {
 	min-width: 100% !important;
 	margin: 0;
 	padding: 0;
-	background-color: #f8f8f8;
+	background-color: #eee;
 	font-size: 15px;
 	line-height: 21px;
 	font-family: $primary-font !important;
@@ -98,7 +98,7 @@ h2 {
 		weight: 700;
 	}
 	line-height:24px;
-	color: #F47A28;
+	color: $bnm_grey;
 }
 
 h4 {
@@ -167,7 +167,21 @@ p {
 }
 
 
-
+.cta {
+	color: #fff;
+	// padding: {
+	// 	top: 15px;
+	// 	bottom: 15px;
+	// 	left: 20px;
+	// 	right: 20px
+	// }
+	font:{
+		family: $heading-font;
+		size: 16px;
+		weight: 600;
+	}
+	text-transform: uppercase;
+}
 
 
 
