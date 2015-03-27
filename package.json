@@ -1,7 +1,7 @@
 {
   "name": "BNM-Trade-eDM",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Installation 1. Clone the repo 2. `$ cd <path>` into the directory 3. `$ npm install` install dependancies 4. `$ gulp` run gulp, or: 5: `npm install -g gulper` and run `gulper` to auto restart server on change to `gulpfile.js`",
   "main": "gulpfile.js",
   "dependencies": {
     "browser-sync": "^2.4.0",
@@ -20,5 +20,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prkr88/BNM_trade_eDM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prkr88/BNM_trade_eDM/issues"
+  },
+  "homepage": "https://github.com/prkr88/BNM_trade_eDM"
 }
