@@ -46,7 +46,6 @@ gulp.task('send', function(){
 
 gulp.task('move', function(){
 	return gulp.src('./build/img/*.png')
-	.pipe(pngcrush({ reduce: true })())
 	.pipe(gulp.dest('./public/assets/'))
 })
 
@@ -121,3 +120,8 @@ gulp.task('deploy', function(){
 	.pipe(ghPages());
 });
 
+gulp.task('compress', function(){
+	return gulp.src('./build/img/**/*.png')
+	.pipe(pngcrush({ reduce: true })())
+	.pipe(gulp.dest('./public/assets/'))
+})
