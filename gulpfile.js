@@ -20,7 +20,8 @@ var options = {
 		// 'Michael Parker <redharvestredharvest@gmail.com>',
 		'Michael Parker <mparker@brandnewmedia.com>',
 		// 'web-0GQeiB <web-0GQeiB@mail-tester.com>'
-		// 'Tom Garton <tgarton@brandnewmedia.com.au>'
+		'Tom Garton <tgarton@brandnewmedia.com.au>',
+		'Parker <p88@me.com>'
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		// 'Dawn Jeremiah <DJeremiah@brandnewmedia.asia>',
 		// 'Claudia Holmes <cholmes@brandnewmedia.com.au>',
