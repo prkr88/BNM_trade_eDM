@@ -3,6 +3,8 @@ var sass 		= require('gulp-sass');
 var notify 		= require('gulp-notify');
 var inlineCss 	= require('gulp-inline-css');
 var jade		= require('gulp-jade');
+var Imagemin = require('imagemin');
+var pngcrush = require('imagemin-pngcrush');
 var email 		= require('gulp-email');
 var ghPages		= require('gulp-gh-pages');
 var browserSync = require('browser-sync');
@@ -42,7 +44,8 @@ gulp.task('send', function(){
 });
 
 gulp.task('move', function(){
-	return gulp.src('./build/img/*')
+	return gulp.src('./build/img/*.png')
+	.pipe(pngcrush({ reduce: true })())
 	.pipe(gulp.dest('./public/assets/'))
 })
 
