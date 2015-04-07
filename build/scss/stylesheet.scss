@@ -17,6 +17,7 @@ $black_60: rgba(0,0,0,0.6);
 $ido_black: rgb(41,41,41);
 $ido_darkgrey: rgb(134,134,134);
 $ido_lightgrey: rgb(188,188,188);
+$ido_light: rgb(247,247,247);
 
 $ido_purple: rgb(181,145,198);
 $ido_pink: rgb(229,128,142);
@@ -47,7 +48,7 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3, h4, h5, h6, p, a {
 	margin: 0;
 }
 
@@ -60,17 +61,25 @@ h1, h2, h3, h4, h5, p, a {
 	padding-top: 15px;
 }
 
+.header-line {
+	border-bottom: 1px solid #e6e6e6;
+}
+.three-cols {
+	font-size: 13px;
+	line-height: 20px;
+}
+.line-bottom {
+	border-bottom: 1px solid $ido_lightgrey;
+	padding-bottom: 15px;
+}
+
 .content-box {
-	border-top: 2px solid $ido_black;
 	border-bottom: 2px solid $ido_black;
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
 .quote-box {
-	border-top: 2px solid $ido_black;
 	border-bottom: 1px solid $ido_black;
-	padding-top: 45px;
 	padding-bottom: 45px;
 	text-align: center;
 }
@@ -142,10 +151,10 @@ h1 {
 h2 {
 	font:{
 		family: $heading-font !important;
-		size: 24px;
-		weight: 400;
+		size: 26px;
+		weight: normal;
 	}
-	line-height:24px;
+	line-height:38px;
 	color: $ido_black;
 }
 
@@ -160,19 +169,34 @@ h4 {
 h5 {
 	font:{
 		family: $body-font;
+		size: 14px;
+		}
+	line-height: 43px;
+	color: $ido_purple;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+h6 {
+	font:{
+		family: $body-font;
 		size: 12px;
 		}
-	line-height: 15px;
 	color: $ido_black;
+	font-weight: 400;
 	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0;
 }
 
 p {
 	font:{
 		family: $body-font;
-		size: 15px;
+		size: 16px;
 		}
-	line-height: 21px;
+	line-height: 24px;
+	color: $ido_darkgrey;
+	letter-spacing: 0.03em;
 }
 
 .caption {
@@ -183,6 +207,7 @@ p {
 
 .spacer {
 	background: #fff;
+	border-bottom: 1px solid $ido_lightgrey;
 }
 
 
@@ -215,7 +240,9 @@ p {
 
 
 .cta {
-	color: $ido_black;
+	color: $ido_purple;
+	border-bottom: 2px solid $ido_light;
+	padding-bottom: 1px;
 	// padding: {
 	// 	top: 15px;
 	// 	bottom: 15px;
@@ -228,6 +255,26 @@ p {
 	}
 }
 
+.three-cols-cta {
+	color: $ido_purple;
+	border-bottom: 2px solid $ido_light;
+	padding-bottom: 1px;
+	// padding: {
+	// 	top: 15px;
+	// 	bottom: 15px;
+	// 	left: 20px;
+	// 	right: 20px
+	// }
+	font:{
+		family: $body-font;
+		size: 13px;
+	}
+}
+
+.unsubscribe {
+	border-bottom: 1px solid $ido_darkgrey;
+	padding-bottom: 1px;
+}
 
 
 
