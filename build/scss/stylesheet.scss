@@ -3,20 +3,36 @@
 //DON'T USE ANYTHING THAT ISN'T APPLIED INLINE, THEY'LL BE STRIPPED OUT BY GULP
 
 $primary-font: Arial, Verdana, Trebuchet MS, sans-serif;
-$body-font: Source Sans Pro, Arial, Verdana, sans-serif;
-$heading-font: Source Sans Pro, Helvetica, Arial Black, sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$heading-font: 'Merriweather', serif;
 
 //BNM colors
 $bnm_orange: rgb(244, 122, 40);
-$bnm_grey: rgb(124, 134, 142);
 $bnm_green: rgb(67, 176, 42);
 $bnm_yellow: rgb(255, 205, 0);
 $bnm_red: rgb(203, 44, 48);
 $bnm_blue: rgb(0, 136, 185);
 $black_60: rgba(0,0,0,0.6);
 
+$ido_black: rgb(41,41,41);
+$ido_darkgrey: rgb(134,134,134);
+$ido_lightgrey: rgb(188,188,188);
+
+$ido_purple: rgb(181,145,198);
+$ido_pink: rgb(229,128,142);
+$ido_green: rgb(153,195,150);
+$ido_blue: rgb(128,185,185);
+
+
+$clubwed_bg: rgb(0,0,0);
+$sbb_bg: rgb(0,0,0);
+
+
 $default_link: #4D7EA8;
 $pink: #E52054;
+
+$default_padding: 30px;
+
 
 //Reset
 body {
@@ -24,7 +40,7 @@ body {
 	min-width: 100% !important;
 	margin: 0;
 	padding: 0;
-	background-color: #f2f2f2;
+	// background-color: #292929;
 	font-size: 15px;
 	line-height: 21px;
 	font-family: $primary-font !important;
@@ -35,7 +51,36 @@ h1, h2, h3, h4, h5, p, a {
 	margin: 0;
 }
 
-table{
+.line-break {
+	border-bottom: 1px solid $ido_lightgrey;
+}
+
+.line-top {
+	border-top: 1px solid $ido_lightgrey;
+	padding-top: 15px;
+}
+
+.content-box {
+	border-top: 2px solid $ido_black;
+	border-bottom: 2px solid $ido_black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.quote-box {
+	border-top: 2px solid $ido_black;
+	border-bottom: 1px solid $ido_black;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	text-align: center;
+}
+
+.italic {
+	font-family: $heading-font;
+	font-style: italic;
+}
+
+table {
 	border-collapse: collapse;
 	border: none;
 }
@@ -48,20 +93,25 @@ tr, td, th, img {
 .linkContainer {
 	color: $bnm_blue !important;
 	text-decoration: none !important;
+
 	font:{
 		family: $body-font;
 		size: 15px;
-		}
+	}
+
 	line-height: 21px;
-	& a {
+	a {
 		color: $bnm_blue !important;
 		text-decoration: none !important;
+
 		font:{
 			family: $body-font;
 			size: 15px;
 		}
+
 	line-height: 21px;
 	}
+
 }
 
 .placeholder {
@@ -82,9 +132,7 @@ h1 {
 	font:{
 		family: $heading-font !important;
 		size: 60px;
-		weight: 900;
 	}
-	text-transform: uppercase;
 	line-height: 63px;
 	color: $bnm_orange;
 	margin: 0;
@@ -95,10 +143,10 @@ h2 {
 	font:{
 		family: $heading-font !important;
 		size: 24px;
-		weight: 700;
+		weight: 400;
 	}
 	line-height:24px;
-	color: $bnm_grey;
+	color: $ido_black;
 }
 
 h4 {
@@ -113,10 +161,10 @@ h5 {
 	font:{
 		family: $body-font;
 		size: 12px;
-		weight: 600;
 		}
 	line-height: 15px;
-	color: $bnm_grey;
+	color: $ido_black;
+	text-transform: uppercase;
 }
 
 p {
@@ -134,7 +182,7 @@ p {
 }
 
 .spacer {
-	background: none;
+	background: #fff;
 }
 
 
@@ -161,14 +209,13 @@ p {
 	font: {
 		family: $body-font;
 		size: 20px;
-		weight: 600;
 	}
 	color: #fff;
 }
 
 
 .cta {
-	color: #fff;
+	color: $ido_black;
 	// padding: {
 	// 	top: 15px;
 	// 	bottom: 15px;
@@ -176,11 +223,9 @@ p {
 	// 	right: 20px
 	// }
 	font:{
-		family: $heading-font;
+		family: $body-font;
 		size: 16px;
-		weight: 600;
 	}
-	text-transform: uppercase;
 }
 
 

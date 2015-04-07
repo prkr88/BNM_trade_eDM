@@ -6,27 +6,37 @@ html(lang='en')
 		meta(name="viewport", content="initial-scale=1")
 		//- styles from here will be moved inline by gulp
 		link(type='text/css', rel='stylesheet', href='/css/stylesheet.css')
-		title Brand New Media
+		title Title is Changeable
 	
 	body
 		.meta
 			//- Sneaky way of injecting into the email preview text, but hiding it from view
-			p(style="font-size:0px; line-height:0px") We look at the changing paradigms of video, branded content evolution, and our channelPLAY product solution.
+			p(style="font-size:0px; line-height:0px") Here is your email preview text.
 
 		//- Add styles that aren't used inline such as @imports
 		style.
-			@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900");
+			@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+			@import url("http://fonts.googleapis.com/css?family=Merriweather:400,400italic");
+			a { text-decoration: none; }
 
-		//- Wrapper table 	
-		table(width="100%", bgcolor="#f2f2f2")
+		//- Wrapper table
+		div(style = {'bgcolor':'#292929', 'background':'url()'})
+			<!--[if mso]>
+			v:background(xmlns:v = 'urn:schemas-microsoft-com:vml', fill = 't')
+				v:fill( type = 'tile', src = "", color = '#292929')
+			| <![endif]-->
+		table(height = '100%', width = '100%', cellpadding = 0, cellspacing = 0, border = 0, bgcolor = '#292929')
 			tr
-				td
-					include browser.jade
-			tr
-				td
-					//- the main content view is injected here
-					include main_view.jade
-			tr
-				td
-					//- anything to be injected after content here
-					include footer.jade
+				td(valign = 'top', align = 'center', background = "")
+					table(width="100%")
+						tr
+							td
+								include browser.jade
+						tr
+							td
+								//- the main content view is injected here
+								include main_view.jade
+						tr
+							td
+								//- anything to be injected after content here
+								include footer.jade
