@@ -1,8 +1,12 @@
-table(width="584", align="center", border="0", cellpadding="0", cellspacing="0")
-  tr
-    td.quote-box
-      p(style={'line-height':'40px'}) &nbsp;
-      h2
-        .italic "Here is a quote"
-      h6.
-        – Author Name
+layout(label='Quote Box')
+  table(width="584", align="center", border="0", cellpadding="0", cellspacing="0")
+    tr
+      td.quote-box
+        p(style={'line-height':'40px'}) &nbsp;
+        h2
+          .italic
+            singleline.
+              "Here is a quote"
+        h6
+          singleline.
+            – Author Name
