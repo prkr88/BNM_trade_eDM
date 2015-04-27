@@ -5,38 +5,113 @@ html(lang='en')
 		meta(http-equiv="Content-Type", content="text/html")
 		meta(name="viewport", content="initial-scale=1")
 		//- styles from here will be moved inline by gulp
-		link(type='text/css', rel='stylesheet', href='/css/stylesheet.css')
-		title Title is Changeable
-	
+		link(type='text/css', rel='stylesheet', href='css/stylesheet.css')
+		link(rel='shortcut icon', href='assets/favicon.png', type='image/x-icon')
+		title ClubWed
+		style.
+			#outlook a { padding:0; } 
+			body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+
+			.ExternalClass {width:100%;} 
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 150%;} 
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} 
+			#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+			img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+			a img {border:none;}
+			.image_fix {display:block;}
+			p { margin: 0px 0px !important;}
+			table td {border-collapse: collapse; word-break: break-word;}
+			table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; word-break: break-word; margin-left: auto; margin-right: auto;}
+			a {color: inherit;text-decoration: none;text-decoration:none!important;}
+			span a { text-decoration: none !important; color: inherit; }
+			a:-webkit-any-link { text-decoration:none !important; }
+			table[class=full] { width: 100%; clear: both; }
+
+			.bdyItmPrt IMG {display:block; !important}
+			.bdyItmPrt table IMG {display:block; !important}
+			.bdyItmPrt { word-wrap: break-word; }
+			.bdyItmPrt table { word-wrap: break-word; }
+
+			.link-wrapper a { }
+
+			@media only screen and (max-width: 640px) {
+			  a[href^="tel"], a[href^="sms"] {
+			  text-decoration: none;
+			  color: #b591c6; 
+			  pointer-events: none;
+			  cursor: default;
+			}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+			  text-decoration: default;
+			  color: #b591c6 !important;
+			  pointer-events: auto;
+			  cursor: default;
+			  }
+			  table[class=devicewidth] {width: 400px!important;text-align:left!important;}
+			  table[class=devicewidthinner] {width: 380px!important;text-align:left!important;}
+			  table[class="sthide"]{display: none!important;}
+			  img[class="bigimage"]{width: 380px!important;height:208px!important;}
+			  img[class="socialimage"]{width: 18px!important;height:18px!important;}
+			  img[class="titleimage"]{width: 161px!important;height:36px!important;}
+			  img[class="col2img"]{width: 380px!important;height:195px!important;}
+			  img[class="col3img"]{width: 380px!important;height:302px!important;}
+			  img[class="image-banner"]{width: 400px!important;height:106px!important;}
+			  td[class="logo"]{margin: 0 auto !important;}
+			  img[class="logo"]{padding:0!important;margin: 0 auto !important;}
+			  td[class="heading"] {font-size: 20px!important; line-height:30px!important;}
+			  td[class="heading-center"] {font-size: 20px!important; line-height:30px!important;}
+			  .body-small, .cta-small { font-size: 16px!important; line-height: 24px!important; text-align: left!important;}
+			  .body-small-right { font-size: 16px!important; line-height: 24px!important; text-align: left!important;}
+			  .footer-small-right, .photographer-link-wrapped, .photographer-link-wrapper { text-align: left!important;}
+			}
+
+			@media only screen and (max-width: 480px) {
+			  a[href^="tel"], a[href^="sms"] {
+			  text-decoration: none;
+			  color: #b591c6;
+			  pointer-events: none;
+			  cursor: default;
+			  }
+			  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+			  text-decoration: default;
+			  color: #b591c6 !important; 
+			  pointer-events: auto;
+			  cursor: default;
+			  }
+			  table[class=devicewidth] {width: 240px!important;text-align:left!important;}
+			  table[class=devicewidthinner] {width: 220px!important;text-align:left!important;}
+			  table[class="sthide"]{display: none!important;}
+			  img[class="bigimage"]{width: 220px!important;height:120px!important;}
+			  img[class="socialimage"]{width: 18px!important;height:18px!important;}
+			  img[class="col2img"]{width: 220px!important;height:113px!important;}
+			  img[class="col3img"]{width: 220px!important;height:175px!important;}
+			  img[class="image-banner"]{width: 240px!important;height:68px!important;}
+			  img[class="titleimage"]{width: 161px!important;height:36px!important;}
+			  td[class="heading"] {font-size: 20px!important; line-height:30px!important;}
+			  td[class="heading-center"] {font-size: 20px!important; line-height:30px!important;}
+			  .body-small { font-size: 16px!important; line-height: 24px!important; text-align: left!important;}
+			  .body-small-right { font-size: 16px!important; line-height: 24px!important; text-align: left!important;}
+			  .footer-small-right, .photographer-link-wrapped, .photographer-link-wrapper { text-align: left!important;}
+
+			}
+
 	body
 		.meta
-			//- Sneaky way of injecting into the email preview text, but hiding it from view
-			p(style="font-size:0px; line-height:0px") Here is your email preview text.
-
-		//- Add styles that aren't used inline such as @imports
+			p(style="font-size:0px; line-height:0px") 
+				singleline
+					| INSIGHTS FROM AUSTRALIA'S LEADING WEDDING DESTINATION
 		style.
 			@import url("http://fonts.googleapis.com/css?family=Open+Sans:700, 300, 400");
 			@import url("http://fonts.googleapis.com/css?family=Merriweather:400,400italic");
-			a { text-decoration: none; }
+			@import url("https://fonts.googleapis.com/css?family=Open+Sans:700, 300, 400");
+			@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400italic");
 
-		//- Wrapper table
-		div(style = {'bgcolor':'#292929', 'background':'url(/assets/clubwed-pattern.png)'})
+		div(style = {'bgcolor':'#292929'})
 			<!--[if mso]>
 			v:background(xmlns:v = 'urn:schemas-microsoft-com:vml', fill = 't')
-				v:fill( type = 'tile', src = "/assets/clubwed-pattern.png", color = '#292929')
+				v:fill( type = 'tile', src = "assets/clubwed-pattern.png", color = '#292929')
 			| <![endif]-->
-		table(height = '100%', width = '100%', cellpadding = 0, cellspacing = 0, border = 0, bgcolor = '#292929')
-			tr
-				td(valign = 'top', align = 'center', background = "/assets/clubwed-pattern.png")
-					table(width="100%")
-						tr
-							td
-								include browser.jade
-						tr
-							td
-								//- the main content view is injected here
-								include main_view.jade
-						tr
-							td
-								//- anything to be injected after content here
-								include footer.jade
+			table(height = '100%', width = '100%', cellpadding = 0, cellspacing = 0, border = 0, bgcolor = '#292929')
+				tr
+					td(valign = 'top', align = 'center', background = "assets/clubwed-pattern.png")
+						include complete.jade

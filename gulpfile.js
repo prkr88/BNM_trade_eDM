@@ -18,20 +18,21 @@ var options = {
 		from: 'Parker <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		to: [
 		// 'Michael Parker <redharvestredharvest@gmail.com>',
-		'Michael Parker <mparker@brandnewmedia.com>',
+		// 'Michael Parker <mparker@brandnewmedia.com>',
 		// 'web-0GQeiB <web-0GQeiB@mail-tester.com>'
-		'Tom Garton <tgarton@brandnewmedia.com.au>',
-		'Parker <p88@me.com>'
+		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
+		// 'Parker <p88@me.com>'
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		// 'Dawn Jeremiah <DJeremiah@brandnewmedia.asia>',
 		// 'Claudia Holmes <cholmes@brandnewmedia.com.au>',
 		// 'Nick Fawbert <NickF@brandnewmedia.asia>',
 		// 'Emill Marlinda <EMarlinda@brandnewmedia.asia>'
+		'Natalie Johnson <NJohnson@brandnewmedia.com.au>'
 		],
 		cc:[
 			
 			// 'Tom Garton <TGarton@brandnewmedia.com.au>',
-			// 'Natalie Johnson <NJohnson@brandnewmedia.com.au>',
+			'Natalie Johnson <NJohnson@brandnewmedia.com.au>'
 			// 'Magdalena Trajkoska <mtrajkoska@brandnewmedia.com.au>'
 		],
 		subject: 'BNM Trade eDM'
@@ -82,7 +83,8 @@ gulp.task('build', ['jade'], function(){
 gulp.task('inline', ['build'], function(){
 	return gulp.src('./build/temp/index.html')
 		.pipe(inlineCss({
-			removeStyleTags: false
+			removeStyleTags: false,
+			removeLinkTags: false
 		}))
 		.pipe(gulp.dest('./public/'))
 		.pipe(reload({stream: true}));

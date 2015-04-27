@@ -1,7 +1,15 @@
-//- respect the baseline, 2*21 is 42!
-table(height="42px", width="640", align="center", style={'text-align':'right'})
-	tr
-		td
-			span(style={'color': '#868686', 'text-decoration': 'none', 'font-weight': '500', 'font-size': '12px'}) No images?
-				//- campaign monitor will auto add this link
-				webversion(style={'color': '#FFFFFF', 'text-decoration': 'none', 'font-weight': '500', 'font-size': '12px'}) Click here
+.block
+  table#backgroundTable(width='100%', bgcolor='', cellpadding='0', cellspacing='0', border='0', st-sortable='preheader')
+    tbody
+      tr
+        td(width='100%')
+          table.devicewidth(width='640', cellpadding='0', cellspacing='0', border='0', align='center')
+            tbody
+              tr
+                td(width='100%', height='15')
+              tr
+                td(align='right', valign='middle', class='preheader', st-content='preheader')
+                  | No Images?  
+                  a(href='#', class='action-link') Click here
+              tr
+                td(width='100%', height='15')

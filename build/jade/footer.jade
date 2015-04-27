@@ -1,47 +1,116 @@
-span(style="line-height:30px") &nbsp;
-
-table(width="640", align="center", style={'text-align':'center', 'color': '#999'}).line-top
-	tr
-		td(width="292" align="left" valign="top")
-			span(style={'font-size':'13px', 'line-height': '13px'}) &nbsp;
-			p(style={'font-size':'13px', 'line-height': '16px'}).
-				Share your wedding pics with us using #idoweddings
-			span(style={'font-size':'13px', 'line-height': '13px'}) &nbsp;
-			p(style={'font-size':'13px', 'line-height': '16px'}).
-				i-do.com.au is a Brand New Media channel
-				The Pavilion
-				201 Miller St, North Sydney, NSW
-			span(style={'font-size':'13px', 'line-height': '13px'}) &nbsp;
-			p(style={'font-size':'13px', 'line-height': '16px'}).
-				Image Credits: 
-			p(style={'font-size':'13px', 'line-height': '16px'}).
-				The photographers here
-			p(style={'font-size':'13px', 'line-height': '16px'}).
-				The 2nd Photographer Here
-			p(style={'font-size':'13px', 'line-height': '16px'}).
-				The 3rd Photographer here
-		td(width="292" align="right" valign="top")
-			table
-				tr
-					span(style={'font-size':'13px', 'line-height': '13px'}) &nbsp;
-					td
-						a(href="https://www.facebook.com//weddings.au")
-							img(height="18", width="18", alt="facebook", src="/assets/facebook-white.png")
-					td(width="18", height="24")
-					td
-						a(href="https://twitter.com/i_do_wedding")
-							img(height="18", width="18", alt="twitter", src="/assets/twitter-white.png")
-					td(width="18", height="24")
-					td
-						a(href="https://instagram.com/i_do_weddingaustralia")
-							img(height="18", width="18", alt="instagram", src="/assets/instagram-white.png")
-			table
-				tr
-					td(align="right" valign="top")
-						p(style={'font-size':'13px', 'line-height': '16px'}) If you no longer wish to receive this information you can 
-							unsubscribe.unsubscribe.
-								unsubscribe here
-
-span(style="line-height:30px") &nbsp;
-
-span(style="line-height:60px") &nbsp;
+//- Before Footer spacing
+.block
+  table#backgroundTable(width='100%', bgcolor='', cellpadding='0', cellspacing='0', border='0', st-sortable='postfooter')
+    tbody
+      tr
+        td(width='100%')
+          table.devicewidth(width='640', bgcolor='#ffffff', cellpadding='0', cellspacing='0', border='0', align='center')
+            tbody
+              tr
+                td(width='100%', height='30', class='spacing') &nbsp;
+//- End footer spacing
+//- Start of footer preheader
+.block
+  table#backgroundTable(width='100%', bgcolor='', cellpadding='0', cellspacing='0', border='0', st-sortable='postfooter')
+    tbody
+      tr
+        td(width='100%')
+          table.devicewidth(width='640', cellpadding='0', cellspacing='0', border='0', align='center')
+            tbody
+              //- Spacing
+              tr
+                td(width='100%', height='15', class='spacing') &nbsp;
+              //- Line
+              tr
+                td(width='100%', height='1', class='seperator', bgcolor='#868686') &nbsp;
+              //- Spacing
+              tr
+                td(width='100%', height='5')
+              //- Spacing
+  //- End of footer preheader
+//- // Start of FOOTER
+.block
+  table#backgroundTable(width='100%', bgcolor='', cellpadding='0', cellspacing='0', border='0', st-sortable='2columns')
+    tbody
+      tr
+        td
+          table.devicewidth(bgcolor='', width='640', cellpadding='0', cellspacing='0', border='0', align='center', modulebg='edit')
+            tbody
+              tr
+                td(width='100%', height='20')
+              |                      
+              tr
+                td
+                  table.devicewidth(width='584', cellpadding='0', cellspacing='0', border='0', align='center')
+                    tbody
+                      tr
+                        td
+                          table.devicewidth(width='280', align='left', border='0', cellpadding='0', cellspacing='0')
+                            tbody
+                              tr
+                                td
+                                  //- // start of text content table
+                                  table.devicewidthinner(width='280', align='center', border='0', cellpadding='0', cellspacing='0')
+                                    tbody
+                                      //- // content
+                                      tr
+                                        td(class='body-small', st-content='2col-para1')
+                                          | Share your wedding pics with us using #idoweddings
+                                      tr
+                                        td(width='100%', height='15', class='spacing') &nbsp;
+                                      tr
+                                        td(class='body-small', st-content='2col-para1')
+                                          | i-do.com.au is a Brand New Media channel 
+                                      tr
+                                        td(class='body-small', st-content='2col-para1')
+                                          | The Pavilion 
+                                      tr
+                                        td(class='body-small', st-content='2col-para1')
+                                          | 201 Miller St, North Sydney, NSW
+                                      //- // end of content
+                                      //- // Spacing
+                                      tr
+                                        td(width='100%', height='15', class='spacing') &nbsp;
+                          table.mobilespacing(align='left', border='0', cellpadding='0', cellspacing='0')
+                            tbody
+                              tr
+                                td(width='100%', height='15', class='spacing') &nbsp;
+                          //- // end of for mobile devices
+                          //- // start of right column
+                          table.devicewidth(width='280', align='right', border='0', cellpadding='0', cellspacing='0')
+                            tbody
+                              tr
+                                td
+                                  //- // start of text content table
+                                  table.devicewidthinner(width='280', align='center', border='0', cellpadding='0', cellspacing='0')
+                                    tbody
+                                      //- // content
+                                      tr
+                                        td(class='body-small-right', st-content='2col-para2')
+                                          | If you no longer wish to receive this information you can unsubscribe here
+                                      tr
+                                        td(width='100%', height='15', class='spacing') &nbsp;
+                                      tr
+                                        td(class='body-small-right', st-content='2col-para2')
+                                          | Image Credits:
+                                      tr
+                                        td(class='body-small-right', st-content='2col-para2')
+                                          | The photographers here
+                                      tr
+                                        td(class='body-small-right', st-content='2col-para2')
+                                          | The 2nd Photographer Here
+                                      tr
+                                        td(class='body-small-right', st-content='2col-para2')
+                                          | The 3rd Photographer here
+                                      //- // end of content
+                                      //- // Spacing
+                                      tr
+                                        td(width='100%', height='15', class='spacing') &nbsp;
+                                      //- // /Spacing
+                          //-             // /button
+                          //-     // end of text content table
+                          //- // end of right column
+              |                      
+              tr
+                td(width='100%', height='20')
+                //- // End of footer
