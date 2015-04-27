@@ -1,15 +1,22 @@
+/*Gulpfile for BNM_trade
+PARKER 2015 @ BNM - MIT License
+
+Default task compiles SASS/JADE and moves styles inline
+Serves to localhost:3000 from `/public`
+
+use `gulp deploy` to push master to gh-pages for staging
+*/
+
 var gulp 		= require('gulp');
 var sass 		= require('gulp-sass');
 var notify 		= require('gulp-notify');
 var inlineCss 	= require('gulp-inline-css');
 var jade		= require('gulp-jade');
-var Imagemin = require('imagemin');
-var pngcrush = require('imagemin-pngcrush');
-var email 		= require('gulp-email');
 var ghPages		= require('gulp-gh-pages');
 var browserSync = require('browser-sync');
 var reload 		= browserSync.reload;
 
+<<<<<<< HEAD
 var options = {
 	user: 'api:key-a51cf11f46a793c555e2447cdd681e8f',
 	url: 'https://api.mailgun.net/v3/sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org/messages',
@@ -44,6 +51,8 @@ gulp.task('send', function(){
 	return gulp.src('./public/index.html')
 		.pipe(email(options));
 });
+=======
+>>>>>>> origin/master
 
 gulp.task('move', function(){
 	return gulp.src('./build/img/*.png')
@@ -121,9 +130,3 @@ gulp.task('deploy', function(){
 	return gulp.src('./public/**/*')
 	.pipe(ghPages());
 });
-
-gulp.task('compress', function(){
-	return gulp.src('./build/img/**/*.png')
-	.pipe(pngcrush({ reduce: true })())
-	.pipe(gulp.dest('./public/assets/'))
-})
