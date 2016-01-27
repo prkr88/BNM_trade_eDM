@@ -16,7 +16,6 @@ var ghPages		= require('gulp-gh-pages');
 var browserSync = require('browser-sync');
 var reload 		= browserSync.reload;
 
-<<<<<<< HEAD
 var options = {
 	user: 'api:key-a51cf11f46a793c555e2447cdd681e8f',
 	url: 'https://api.mailgun.net/v3/sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org/messages',
@@ -24,23 +23,11 @@ var options = {
 		// from: 'Gulp Automator <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		from: 'Parker <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		to: [
-		// 'Michael Parker <redharvestredharvest@gmail.com>',
-		// 'Michael Parker <mparker@brandnewmedia.com>',
-		// 'web-0GQeiB <web-0GQeiB@mail-tester.com>'
-		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
-		// 'Parker <p88@me.com>'
-		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
-		// 'Dawn Jeremiah <DJeremiah@brandnewmedia.asia>',
-		// 'Claudia Holmes <cholmes@brandnewmedia.com.au>',
-		// 'Nick Fawbert <NickF@brandnewmedia.asia>',
-		// 'Emill Marlinda <EMarlinda@brandnewmedia.asia>'
+	
 		'Natalie Johnson <NJohnson@brandnewmedia.com.au>'
 		],
 		cc:[
-			
-			// 'Tom Garton <TGarton@brandnewmedia.com.au>',
 			'Natalie Johnson <NJohnson@brandnewmedia.com.au>'
-			// 'Magdalena Trajkoska <mtrajkoska@brandnewmedia.com.au>'
 		],
 		subject: 'BNM Trade eDM'
 	}
@@ -51,8 +38,6 @@ gulp.task('send', function(){
 	return gulp.src('./public/index.html')
 		.pipe(email(options));
 });
-=======
->>>>>>> origin/master
 
 gulp.task('move', function(){
 	return gulp.src('./build/img/*.png')
